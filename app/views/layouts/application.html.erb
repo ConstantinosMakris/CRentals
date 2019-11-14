@@ -10,7 +10,15 @@
   </head>
 
   <body>
-
+    <header id="homeHeader">
+      CRentals Car Hire
+    </header>
+    <nav id="homeNav">
+      <%= link_to "Contact Us", root_path %>
+      <a href="/html/">About Us</a> |
+      <a href="/css/">Contact Us</a> |
+      <a href="/js/">Book a car</a> |
+    </nav>
     <% flash.each do |key, value| %>
     <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
     <% end %>

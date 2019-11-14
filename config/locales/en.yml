@@ -30,7 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: CRentals
+# app_title: CRentals
   app_description: Welcome to CRentals company
 
   home:
