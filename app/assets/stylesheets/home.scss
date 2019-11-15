@@ -10,16 +10,19 @@ form label, form input {
 body{
   font-size: 20px;
 }
-
+#leftList, #rightList{
+  font-size: 30px;
+  font-family: cursive;
+}
 #leftList{
   float:left;
-  width: 400px;
-  padding: 0;
+  width: 500px;
+  padding: 20px;
 }
 #rightList{
   float:right;
-  width: 400px;
-  padding: 0;
+  width: 500px;
+  padding: 20px;
 }
 .carPicHome{
   display: block;
