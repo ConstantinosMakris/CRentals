@@ -42,8 +42,6 @@ en:
       title:  Make a reservation
       contact_us: Complete the following form to book a vehicle
 
-
-
       name: "Name:"
       enter_name: Enter your name
       email: "Email:"
@@ -55,5 +53,27 @@ en:
       submit: Contact Us
 
     request_contact:
+      no_email: You must supply an email address
+      email_sent: Thank you. We will be in touch shortly.
+
+    aboutUs:
+      title: About Us
+      aboutUs: CRentals company for
+
+    quote:
+      title: Quote
+      quote: Get a quote
+
+      name: "Name:"
+      enter_name: Enter your Name
+      email: "Email:"
+      enter_email: Enter your email address
+      telephone: "Telephone:"
+      enter_telephone: Enter your telephone number
+      message: "Message:"
+      enter_message: Enter your message
+      submit: Contact Us
+
+    get_quote:
       no_email: You must supply an email address
       email_sent: Thank you. We will be in touch shortly.

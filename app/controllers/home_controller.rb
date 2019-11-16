@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+
   def home
   end
 
@@ -8,7 +9,26 @@ class HomeController < ApplicationController
   def aboutUs
   end
 
-  def book 
+  def book
+  end
+
+  def quote
+  end
+
+  def get_quote
+    name = params[:name]
+    email = params[:email]
+    telephone = params[:telephone]
+    message = params[:message]
+
+    if email.blank?
+      flash[:alert] = I18n.t('home.request_contact.no_email')
+    else
+      ContactMailer.contact_email(email, name, telephone, message).deliver_now
+      flash[:notice] = I18n.t('home.request_contact.email_sent')
+    end
+
+    redirect_to root_path
   end
 
   def request_contact

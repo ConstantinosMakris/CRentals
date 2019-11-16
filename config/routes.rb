@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   get 'aboutUs', to: 'home#aboutUs'
 
   get 'book', to: 'home#carRates'
+
+  get 'quote', to: 'home#quote'
+  post 'get_quote', to: 'home#get_quote'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

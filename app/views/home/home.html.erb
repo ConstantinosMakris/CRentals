@@ -8,27 +8,36 @@
   </head>
 
   <body>
-
-    <ul id="leftList">
-      <li>Low Prices</li>
+    <div id="list1">
+      <ul id="leftList">
+        <li>Low Prices</li>
+        <br>
+        <li>Cheapest Weekly Rates</li>
+        <br>
+        <li>Free Collection and Delivery</li>
+        <br>
+        <li>7 Seaters Available</li>
+      </ul>
+      <ul id="rightList">
+        <li>Free GPS provided</li>
+        <br>
+        <li>Free babyseats</li>
+        <br>
+        <li>Full insurance at an extra cost</li>
+        <br>
+        <li>Cars in great condition</li>
+      </ul>
+    </div>
+    <span class="images">
+      <%= image_tag("suzuki.jpg", :alt => "suzuki", :class => "suzuki") %>
+      <%= image_tag("stars.jpg", :alt => "stars", :class => "stars") %>
+    </span>
+    <div id="about">
       <br>
-      <li>Cheapest Weekly Rates</li>
+      CRentals is a car rentals company established in 2019 in Guildford, UK <br> <br>
+      All CRentals prices include VAT, third-party insurance and 24hr breakdown service. Our aim is to keep our customers satisfied by giving good service and low prices.
       <br>
-      <li>Free Collection and Delivery</li>
-      <br>
-      <li>7 Seaters Available</li>
-    </ul>
-    <ul id="rightList">
-      <li>Free GPS provided</li>
-      <br>
-      <li>Free babyseats</li>
-      <br>
-      <li>Full insurance at an extra cost</li>
-      <br>
-      <li>Good condition</li>
-    </ul>
-      <%= image_tag("suzuki.jpg", :alt => "suzuki", :class => "carPicHome") %>
-    <p>CRentals is a car rentals company established in 2019 in Guildford, UK </p>
+    </div>
   </body>
 
 

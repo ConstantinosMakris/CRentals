@@ -10,23 +10,36 @@ form label, form input {
 body{
   font-size: 20px;
 }
-#leftList, #rightList{
-  font-size: 30px;
-  font-family: cursive;
-}
+
 #leftList{
   float:left;
   width: 500px;
-  padding: 20px;
+  padding: 30px;
 }
 #rightList{
   float:right;
   width: 500px;
-  padding: 20px;
+  padding: 30px;
 }
-.carPicHome{
+.suzuki, .stars{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:400px
+  width:50%;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
+.suzuki{
+  float:right;
+}
+.stars{
+  float: left;
+}
+#rightList, #leftList {
+  width: 50%;
+  height:200px;
+  background: lightGrey;
+  font-size: 30px;
+  font-family: cursive;
+}
+ #about {
+   font-size: 20px;
+ }
