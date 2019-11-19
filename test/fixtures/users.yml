@@ -5,9 +5,11 @@ one:
   surname: MyString
   age: 1
   telephone: MyString
+  email: MyString
 
 two:
   name: MyString
   surname: MyString
   age: 1
   telephone: MyString
+  email: MyString

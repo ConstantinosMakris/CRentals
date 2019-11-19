@@ -9,5 +9,11 @@
 <%= telephone_field_tag :telephone, '', title: t('.enter_telephone') %>
 <%= label_tag :message, t('.message') %>
 <%= text_field_tag :message, '', title: t('.enter_message'), size: 100 %>
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
 <%= submit_tag t('.submit') %>
 <% end %>

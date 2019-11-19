@@ -5,8 +5,6 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get root_url
     assert_response :success
     assert_select 'title', 'CRentals'
-    assert_select 'h1', 'CRentals'
-    assert_select 'p', 'Welcome to CRentals company'
   end
 
   test "should get contact" do
@@ -14,8 +12,6 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_template layout: 'application'
     assert_select 'title', 'CRentals'
-    assert_select 'h1', 'Make a reservation'
-    assert_select 'p', 'Complete the following form to book a vehicle'
   end
 
   test "should post request contact but no email" do
