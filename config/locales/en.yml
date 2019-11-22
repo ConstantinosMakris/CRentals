@@ -77,3 +77,49 @@ en:
     get_quote:
       no_email: You must supply an email address
       email_sent: Thank you. We will be in touch shortly.
+
+    carRates:
+      models: Car Models
+      details: Car Details
+
+    suzuki:
+      model: "Model: Suzuki SX4 S-Cross"
+      engine: "Engine: 1.4"
+      seats: "Seats: 5"
+      transmission: "Transmission: Manual"
+      ac: "A/C: Yes"
+
+    isuzu:
+      model: "Model: Isuzu MU-X"
+      engine: "Engine: 3.0"
+      seats: "Seats: 7"
+      transmission: "Transmission: Automatic"
+      ac: "A/C: Yes"
+
+    honda:
+      model: "Model: Honda Jazz"
+      engine: "Engine: 1.3"
+      seats: "Seats: 5"
+      transmission: "Transmission: Automatic"
+      ac: "A/C: No"
+
+    mazda:
+      model: "Model: Mazda 2"
+      engine: "Engine: 1.5"
+      seats: "Seats: 5"
+      transmission: "Transmission: Manual"
+      ac: "A/C: Yes"
+
+    peugeot:
+      model: "Model: Peugeot 407"
+      engine: "Engine: 1.8"
+      seats: "Seats: 5"
+      transmission: "Transmission: Automatic"
+      ac: "A/C: Yes"
+
+    mercedes:
+      model: "Model: Mercedes S-Class"
+      engine: "Engine: 2.2"
+      seats: "Seats: 5"
+      transmission: "Transmission: Automatic"
+      ac: "A/C: Yes"

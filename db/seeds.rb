@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+welcome = User.where(email: 'conmakris99@gmail.com').first
+welcome.delete if welcome
+
+users = User.create([enail: 'conmakris99@gmail.com'])

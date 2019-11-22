@@ -3,7 +3,9 @@
   <body>
     <header id="homeHeader">
     CRentals Car Hire
+    <button onclick="location.href='http://localhost:3000/users/sign_in'" type="button" id="headerButton">Sign In</button>
     <button onclick="location.href='http://localhost:3000/quote'" type="button" id="headerButton">Get a quick quote</button>
+    <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete' %>
     <ul id="headerList">
       <li>Guildford, UK</li>
       <li>+44 7517292860</li>
