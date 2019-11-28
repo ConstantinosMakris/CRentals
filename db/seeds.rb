@@ -10,3 +10,8 @@ welcome = User.where(email: 'conmakris99@gmail.com').first
 welcome.delete if welcome
 
 users = User.create([email: 'conmakris99@gmail.com'])
+
+welcome = Car.where(model: 'test').first
+welcome.delete if welcome
+
+cars = Car.create([model: 'testModel', engine: '1.4', seats:'5', transmission: 'auto', ac: 'yes', priceDay: '30', priceWeek: '150'])
