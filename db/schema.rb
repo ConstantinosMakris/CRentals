@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_28_180052) do
+ActiveRecord::Schema.define(version: 2019_11_28_191809) do
+
+  create_table "cars", force: :cascade do |t|
+    t.string "model", null: false
+    t.integer "engine", null: false
+    t.integer "seats", null: false
+    t.string "transmission", null: false
+    t.boolean "ac", null: false
+    t.decimal "priceDay", null: false
+    t.decimal "priceWeek", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["model"], name: "index_Cars_on_model", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
