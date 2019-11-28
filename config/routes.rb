@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   get 'quote', to: 'home#quote'
   post 'get_quote', to: 'home#get_quote'
 
+  get 'destroy_user_session_path', to: 'home#sign_out'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

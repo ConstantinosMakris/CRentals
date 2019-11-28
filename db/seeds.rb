@@ -9,4 +9,4 @@
 welcome = User.where(email: 'conmakris99@gmail.com').first
 welcome.delete if welcome
 
-users = User.create([enail: 'conmakris99@gmail.com'])
+users = User.create([email: 'conmakris99@gmail.com'])

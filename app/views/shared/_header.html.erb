@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <body>
-    <header id="homeHeader">
-    CRentals Car Hire
-    <button onclick="location.href='http://localhost:3000/users/sign_in'" type="button" id="headerButton">Sign In</button>
-    <button onclick="location.href='http://localhost:3000/quote'" type="button" id="headerButton">Get a quick quote</button>
-    <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete' %>
-    <ul id="headerList">
-      <li>Guildford, UK</li>
-      <li>+44 7517292860</li>
-    </ul>
-    </header>
+    <div class="divHeader">
+      <header id="homeHeader">
+          <%= I18n.t('home.home.title')%>
 
-    <nav id="homeNav">
-      <a href="http://localhost:3000/">Home</a> |
-      <a href="http://localhost:3000/book">Car Rates</a> |
-      <a href="http://localhost:3000/contact">Contact Us</a> |
-      <a href="http://localhost:3000/aboutUs">About Us</a> |
-    </nav>
+
+        <ul id="headerList">
+          <li><%= I18n.t('home.header.title')%></li>
+          <li><%= I18n.t('home.header.telephone')%></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="divNav">
+      <nav id="homeNav">
+        <a href="http://localhost:3000/"><%= I18n.t('home.nav.home')%></a> |
+        <a href="http://localhost:3000/book"><%= I18n.t('home.nav.rates')%></a> |
+        <a href="http://localhost:3000/contact"><%= I18n.t('home.nav.contact_us')%></a> |
+        <a href="http://localhost:3000/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
+        <a href="http://localhost:3000/quote"><%= I18n.t('home.nav.quote')%></a> |
+        <a href="http://localhost:3000/users/sign_in"><%= I18n.t('home.nav.sign_in')%></a> |
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+      </nav>
+    </div>
+
 
   </body>
 </html>

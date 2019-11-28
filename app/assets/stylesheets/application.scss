@@ -27,21 +27,30 @@
   width: 1150px;
  }
 
+ h1{
+   font-size: 70px;
+   font-family: luminari;
+   font-weight: bold;
+ }
+
  #homeHeader {
-   padding: 60px;
    text-align: left;
    background: #1abc9c;
    color: white;
    font-family:sans-serif;
    font-size: 50px;
+   height: 250px;
  }
 
-nav{
+ header{
+   heigh: 250px;
+ }
+
+ nav{
    border-style: solid;
    border-width: 1px;
    border-color: black;
  }
-
 
  header{
    border-style: solid;
@@ -61,14 +70,13 @@ nav{
    color: white;
  }
 
- a.active {
-   color: black;
+ .active {
+   background-color: #1abc9c;
  }
 
  #homeFooter {
   margin-bottom: auto;
   width: 100%;
-
  }
 
  footer{
@@ -77,16 +85,6 @@ nav{
    border-color: black;
  }
 
- #headerList{
-  text-align: right;
- }
-
- #headerButton{
-   float:right;
-   height: 40px;
-   width: 230px;
-   background-color: white;
-   color: black;
-   font-size: 20px;
-   font-family: "Comic Sans MS", cursive, sans-serif;
+ .divTitle{
+   align: left;
  }

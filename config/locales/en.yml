@@ -12,7 +12,7 @@
 #
 # To use a different locale, set it with `I18n.locale`:
 #
-#     I18n.locale = :es
+#     I18n.locsale = :es
 #
 # This would use the information in config/locales/es.yml.
 #
@@ -37,6 +37,24 @@ en:
     home:
       title: CRentals
       welcome: Welcome to CRentals company
+
+    header:
+      title: CRentals Car Hire
+      location: Guildford, UK
+      telephone: "+44 7517292860"
+
+    nav:
+      home: Home
+      rates: Car Rates
+      contact_us: Contact Us
+      about_us: About Us
+      quote: Quick Quote
+      sign_in: Sign In
+      sign_out: Sign Out
+
+    footer:
+      footer1: Implemented by Constantinos Makris                  ©2019
+      footer2: cm01428@surrey.ac.uk
 
     contact:
       title:  Make a reservation
