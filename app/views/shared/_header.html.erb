@@ -15,13 +15,26 @@
 
     <div class="divNav">
       <nav id="homeNav">
-        <a href="http://localhost:3000/"><%= I18n.t('home.nav.home')%></a> |
-        <a href="http://localhost:3000/book"><%= I18n.t('home.nav.rates')%></a> |
-        <a href="http://localhost:3000/contact"><%= I18n.t('home.nav.contact_us')%></a> |
-        <a href="http://localhost:3000/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
-        <a href="http://localhost:3000/quote"><%= I18n.t('home.nav.quote')%></a> |
-        <a href="http://localhost:3000/users/sign_in"><%= I18n.t('home.nav.sign_in')%></a> |
-        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+        <span class="nav1">
+          <a href="http://localhost:3000/"><%= I18n.t('home.nav.home')%></a> |
+          <a href="http://localhost:3000/book"><%= I18n.t('home.nav.rates')%></a> |
+          <a href="http://localhost:3000/contact"><%= I18n.t('home.nav.contact_us')%></a> |
+          <a href="http://localhost:3000/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
+          <a href="http://localhost:3000/quote"><%= I18n.t('home.nav.quote')%></a> |
+        </span>
+        <span class="nav2">
+          <% if user_signed_in? %>
+          <%= "#{current_user.username} |" %>
+          <%= link_to t('profile'), edit_user_registration_path %>
+          <%= '|' %>
+          <%= link_to t('logout'), destroy_user_session_path, method: 'delete' %>
+          <% else %>
+          <% end %>
+          <%= '|' %>
+          <%= link_to t('login'), new_user_session_path %>
+          <%= '|' %>
+          <%= link_to t('sign_up'), new_user_registration_path %>
+        </span>
       </nav>
     </div>
 
