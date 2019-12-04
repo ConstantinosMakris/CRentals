@@ -21,6 +21,21 @@
                 hint: "we need your current password to confirm your changes",
                 required: true,
                 input_html: { autocomplete: "current-password" } %>
+    <%= f.input :username,
+                required: false,
+                input_html: { autocomplete: "username" }%>
+    <%= f.input :first_name,
+                required: true,
+                input_html: { autocomplete: "first_name" }%>
+    <%= f.input :last_name,
+                required: true,
+                input_html: { autocomplete: "last_name" }%>
+    <%= f.input :age,
+                required: true,
+                input_html: { autocomplete: "age" }%>
+    <%= f.input :telephone,
+                required: true,
+                input_html: { autocomplete: "telephone" }%>
   </div>
 
   <div class="form-actions">

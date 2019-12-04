@@ -15,6 +15,26 @@
     <%= f.input :password_confirmation,
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
+    <%= f.input :username,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "username" }%>
+    <%= f.input :first_name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "first_name" }%>
+    <%= f.input :last_name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "last_name" }%>
+    <%= f.input :age,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "age" }%>
+    <%= f.input :telephone,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "telephone" }%>
   </div>
 
   <div class="form-actions">

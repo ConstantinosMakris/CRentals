@@ -7,6 +7,9 @@
 one:
   created_at: '2019-11-22 14:00:02.392055'
   updated_at: '2019-11-22 14:00:02.392055'
-  id: 298486374
-#two: {}
-# column: value
+  email: 'conmakris99@gmail.com'
+  username: 'cm01428'
+  first_name: 'Constantinos'
+  last_name: 'Makris'
+  age: 20
+  telephone: '0345435654'

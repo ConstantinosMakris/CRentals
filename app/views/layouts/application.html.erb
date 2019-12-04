@@ -11,12 +11,13 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
     <%= render "shared/header" %>
-    <% flash.each do |key, value| %>
-    <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
-    <% end %>
-    <%= yield %>
+    <div class="content">
+      <% flash.each do |key, value| %>
+      <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+      <% end %>
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </body>
 

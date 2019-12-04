@@ -37,6 +37,16 @@ en:
     home:
       title: CRentals
       welcome: Welcome to CRentals company
+      list1: Low Prices
+      list2: Cheapest Weekly Rates
+      list3: Free Collection and Delivery
+      list4: 7 Seaters Available
+      list5: Free GPS provided
+      list6: Free babyseats
+      list7: Full insurance at an extra cost
+      list8: Cars in great condition
+      description1: CRentals is a car rentals company established in 2019 in Guildford, UK
+      description2: All CRentals prices include VAT, third-party insurance and 24hr breakdown service. Our aim is to keep our customers satisfied by giving good service and low prices.
 
     header:
       title: CRentals Car Hire
@@ -53,7 +63,7 @@ en:
       sign_out: Sign Out
 
     footer:
-      footer1: Implemented by Constantinos Makris                  ©2019
+      footer1: Implemented by Constantinos Makris ©2019
       footer2: cm01428@surrey.ac.uk
 
     contact:
@@ -106,6 +116,8 @@ en:
       seats: "Seats: 5"
       transmission: "Transmission: Manual"
       ac: "A/C: Yes"
+      priceDay: "Price per day: £55"
+      priceWeek: "Price per week: £275"
 
     isuzu:
       model: "Model: Isuzu MU-X"
@@ -113,6 +125,8 @@ en:
       seats: "Seats: 7"
       transmission: "Transmission: Automatic"
       ac: "A/C: Yes"
+      priceDay: "Price per day: £65"
+      priceWeek: "Price per week: £325"
 
     honda:
       model: "Model: Honda Jazz"
@@ -120,6 +134,8 @@ en:
       seats: "Seats: 5"
       transmission: "Transmission: Automatic"
       ac: "A/C: No"
+      priceDay: "Price per day: £30"
+      priceWeek: "Price per week: £150"
 
     mazda:
       model: "Model: Mazda 2"
@@ -127,6 +143,8 @@ en:
       seats: "Seats: 5"
       transmission: "Transmission: Manual"
       ac: "A/C: Yes"
+      priceDay: "Price per day: £33"
+      priceWeek: "Price per week: £165"
 
     peugeot:
       model: "Model: Peugeot 407"
@@ -134,6 +152,8 @@ en:
       seats: "Seats: 5"
       transmission: "Transmission: Automatic"
       ac: "A/C: Yes"
+      priceDay: "Price per day: £45"
+      priceWeek: "Price per week: £225"
 
     mercedes:
       model: "Model: Mercedes S-Class"
@@ -141,3 +161,5 @@ en:
       seats: "Seats: 5"
       transmission: "Transmission: Automatic"
       ac: "A/C: Yes"
+      priceDay: "Price per day: £100"
+      priceWeek: "Price per week: £550"

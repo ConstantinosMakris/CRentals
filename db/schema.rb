@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_28_191809) do
+ActiveRecord::Schema.define(version: 2019_12_02_185422) do
 
   create_table "cars", force: :cascade do |t|
     t.string "model", null: false
-    t.integer "engine", null: false
+    t.decimal "engine", null: false
     t.integer "seats", null: false
     t.string "transmission", null: false
     t.boolean "ac", null: false

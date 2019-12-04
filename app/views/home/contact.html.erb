@@ -2,18 +2,12 @@
 
 <%= form_tag request_contact_path, method: 'post' do %>
 <%= label_tag :name, t('.name') %>
-<%= text_field_tag :name, '', title: t('.enter_name'), size: 50 %>
+<%= text_field_tag :name, '', title: t('.enter_name'), size: 50, required: true %>
 <%= label_tag :email, t('.email') %>
-<%= email_field_tag :email, '', title: t('.enter_email') %>
+<%= email_field_tag :email, '', title: t('.enter_email'), required: true %>
 <%= label_tag :telephone, t('.telephone') %>
-<%= telephone_field_tag :telephone, '', title: t('.enter_telephone') %>
-<%= label_tag :message, t('.message') %>
-<%= text_field_tag :message, '', title: t('.enter_message'), size: 100 %>
-<select name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
+<%= telephone_field_tag :telephone, '', title: t('.enter_telephone'), required: true %>
+<%= label_tag :message, t('.message'), required: true %>
+<%= text_field_tag :message, '', title: t('.enter_message'), size: 100, required: true %>
 <%= submit_tag t('.submit') %>
 <% end %>
