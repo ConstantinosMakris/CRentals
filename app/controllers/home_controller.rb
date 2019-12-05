@@ -18,6 +18,9 @@ class HomeController < ApplicationController
   def sign_out
   end
 
+  def rentals
+  end
+  
   def get_quote
     name = params[:name]
     email = params[:email]

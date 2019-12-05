@@ -4,8 +4,6 @@
     <div class="divHeader">
       <header id="homeHeader">
           <%= I18n.t('home.home.title')%>
-
-
         <ul id="headerList">
           <li><%= I18n.t('home.header.title')%></li>
           <li><%= I18n.t('home.header.telephone')%></li>
@@ -16,28 +14,25 @@
     <div class="divNav">
       <nav id="homeNav">
         <span class="nav1">
-          <a href="http://localhost:3000/"><%= I18n.t('home.nav.home')%></a> |
-          <a href="http://localhost:3000/book"><%= I18n.t('home.nav.rates')%></a> |
-          <a href="http://localhost:3000/contact"><%= I18n.t('home.nav.contact_us')%></a> |
-          <a href="http://localhost:3000/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
-          <a href="http://localhost:3000/quote"><%= I18n.t('home.nav.quote')%></a> 
+          <a href="/"><%= I18n.t('home.nav.home')%></a> |
+          <a href="/book"><%= I18n.t('home.nav.rates')%></a> |
+          <a href="/contact"><%= I18n.t('home.nav.contact_us')%></a> |
+          <a href="/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
         </span>
-        <span class="nav2">
+        <span class="nav2" style="margin-left: 9em;padding: 0 7em 2em 0;">
           <% if user_signed_in? %>
-          <%= "#{current_user.username} |" %>
+          <%= "#{current_user.username} |"  %>
+          <a href="/rentals/new"><%= I18n.t('home.nav.rental')%></a> |
           <%= link_to t('profile'), edit_user_registration_path %>
           <%= '|' %>
           <%= link_to t('logout'), destroy_user_session_path, method: 'delete' %>
           <% else %>
-          <% end %>
-          <%= '|' %>
           <%= link_to t('login'), new_user_session_path %>
           <%= '|' %>
           <%= link_to t('sign_up'), new_user_registration_path %>
+          <% end %>
         </span>
       </nav>
     </div>
-
-
   </body>
 </html>

@@ -1,0 +1,17 @@
+<%# frozen_string_literal: true %>
+<%= simple_form_for(@rental) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <div class="form-inputs">
+    <%= f.association :user, selected: current_user , class: 'user'%>
+    <%= 'Select Car : ' %>
+    <%= f.association :car, collection: Car.all.map { |car| [car.model, car.id]} , class: 'car'%>
+    <%= f.input :start, as: :datetime %>
+    <%= f.input :end, class: 'finish'%>
+    <%= f.input :address , class: 'address'%>
+    <%= f.input :comments , class: 'comments'%>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

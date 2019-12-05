@@ -12,10 +12,13 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= require flatpickr
+ *= require flatpickr/themes/dark
+  */
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
 
  $font: 'Times New Roman', 'Times', serif;
  $color: #FFFFFF;

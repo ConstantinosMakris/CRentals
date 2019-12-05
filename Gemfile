@@ -57,7 +57,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  #gem 'chromedriver-helper'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -66,6 +66,6 @@ gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'modernizr-rails'
 gem 'rails-controller-testing'
-gem 'bootstrap', '~> 4.3.1'
 gem 'simple_form'
 gem 'devise'
+gem 'flatpickr'

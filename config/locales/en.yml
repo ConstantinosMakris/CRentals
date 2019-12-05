@@ -58,7 +58,7 @@ en:
       rates: Car Rates
       contact_us: Contact Us
       about_us: About Us
-      quote: Quick Quote
+      rental: Rent
       sign_in: Sign In
       sign_out: Sign Out
 
@@ -163,3 +163,5 @@ en:
       ac: "A/C: Yes"
       priceDay: "Price per day: £100"
       priceWeek: "Price per week: £550"
+
+  
