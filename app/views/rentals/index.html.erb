@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    
+
     <% if user_signed_in? %>
     <% @rentals.each do |rental| %>
       <tr>
@@ -46,9 +46,9 @@
           <%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
-      <%= link_to 'New Rental', new_rental_path %>
 
     <% end %>
+    <%= link_to 'New Rental', new_rental_path %>
   </tbody>
 </table>
 <br/>

@@ -1,8 +1,12 @@
 require 'test_helper'
 
-class RentalsControllerTest < ActionDispatch::IntegrationTest
+class RentalsControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
+
   setup do
     @rental = rentals(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do

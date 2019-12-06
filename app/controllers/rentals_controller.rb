@@ -30,6 +30,7 @@ class RentalsController < ApplicationController
   def create
     @rental = Rental.new(rental_params)
 
+
     respond_to do |format|
       if @rental.save
         format.html { redirect_to @rental, notice: 'Rental was successfully created.' }
@@ -69,13 +70,13 @@ class RentalsController < ApplicationController
     user = User.params[:username]
   end
 
-  def set_rental
-    @rental = Rental.find(params[:id])
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
-
+    def set_rental
+      @rental = Rental.find(params[:id])
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rental_params

@@ -1,6 +1,8 @@
 require 'test_helper'
 
-class CarsControllerTest < ActionDispatch::IntegrationTest
+class CarsControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
+
   setup do
     @car = cars(:one)
   end
