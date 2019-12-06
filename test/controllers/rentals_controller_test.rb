@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class RentalsControllerTest < ActionController::TestCase
-  include Devise::TestHelpers
+  #include Devise::TestHelpers
 
   setup do
     @rental = rentals(:one)

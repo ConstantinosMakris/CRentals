@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class CarsControllerTest < ActionController::TestCase
-  include Devise::TestHelpers
+  #include Devise::TestHelpers
 
   setup do
     @car = cars(:one)

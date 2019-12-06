@@ -15,11 +15,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//= require flatpickr
-import flatpickr from 'flatpickr'
-flatpickr(".datePicker", {
-
-});
-document.addEventListener('DOMContentLoaded', function() {
-  flatpickr('.datePicker1');
-})

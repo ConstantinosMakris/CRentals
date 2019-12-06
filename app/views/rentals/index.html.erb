@@ -1,5 +1,5 @@
 <h1>Listing rentals</h1>
-<table>
+<table class="dataTable">
   <thead>
     <tr>
       <th>User</th>
@@ -46,7 +46,6 @@
           <%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
-
     <% end %>
     <%= link_to 'New Rental', new_rental_path %>
   </tbody>

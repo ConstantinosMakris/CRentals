@@ -20,10 +20,11 @@
           <a href="/contact"><%= I18n.t('home.nav.contact_us')%></a> |
           <a href="/aboutUs"><%= I18n.t('home.nav.about_us')%></a> |
         </span>
-        <span class="nav2" style="margin-left: 9em;padding: 0 7em 2em 0;">
+        <span class="nav2" style="margin-left: 10em;padding10px;">
           <% if user_signed_in? %>
           <%= "#{current_user.username} |"  %>
-          <a href="/rentals/new"><%= I18n.t('home.nav.rental')%></a> |
+          <a href="/rentals/new"><%= I18n.t('home.nav.rent')%></a> |
+          <a href="/rentals"><%= I18n.t('home.nav.rental')%></a> |
           <%= link_to t('profile'), edit_user_registration_path %>
           <%= '|' %>
           <%= link_to t('logout'), destroy_user_session_path, method: 'delete' %>
