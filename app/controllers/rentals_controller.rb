@@ -6,7 +6,11 @@ class RentalsController < ApplicationController
   # GET /rentals
   # GET /rentals.json
   def index
-    @rentals = Rental.all
+    if current_user.admin?
+      @rentals = Rental.all
+    else
+      @rentals = Rental.user_rental(current_user)
+    end
   end
 
   # GET /rentals/1
@@ -29,7 +33,7 @@ class RentalsController < ApplicationController
   # POST /rentals.json
   def create
     @rental = Rental.new(rental_params)
-
+    @rental.user = current_user
 
     respond_to do |format|
       if @rental.save

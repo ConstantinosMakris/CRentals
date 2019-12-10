@@ -8,12 +8,3 @@ one:
   ac: false
   priceDay: 9.99
   priceWeek: 9.99
-
-# two:
-#   model: MyString2hgfdghfdghgfhdfgh65
-#   engine: 1
-#   seats: 1
-#   transmission: MyString
-#   ac: false
-#   priceDay: 9.99
-#   priceWeek: 9.99

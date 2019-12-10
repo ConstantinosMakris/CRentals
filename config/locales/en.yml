@@ -59,7 +59,7 @@ en:
       contact_us: Contact Us
       about_us: About Us
       rental: Your Rentals
-      rent: Rent 
+      rent: Rent
       sign_in: Sign In
       sign_out: Sign Out
 
@@ -68,9 +68,7 @@ en:
       footer2: cm01428@surrey.ac.uk
 
     contact:
-      title:  Make a reservation
-      contact_us: Complete the following form to book a vehicle
-
+      title:  Contact us through this form
       name: "Name:"
       enter_name: Enter your name
       email: "Email:"
@@ -87,21 +85,8 @@ en:
 
     aboutUs:
       title: About Us
-      aboutUs: CRentals company for
+      location: Our Location
 
-    quote:
-      title: Quote
-      quote: Get a quote
-
-      name: "Name:"
-      enter_name: Enter your Name
-      email: "Email:"
-      enter_email: Enter your email address
-      telephone: "Telephone:"
-      enter_telephone: Enter your telephone number
-      message: "Message:"
-      enter_message: Enter your message
-      submit: Contact Us
 
     get_quote:
       no_email: You must supply an email address
@@ -164,3 +149,52 @@ en:
       ac: "A/C: Yes"
       priceDay: "Price per day: £100"
       priceWeek: "Price per week: £550"
+
+  views:
+    indexRentals:
+      user: User
+      car: Car
+      start: Start of Rental
+      end: End of Rental
+      address: Address of Rental
+      comments: Comments
+      linkShow: Show
+      linkEdit: Edit
+      linkDestroy: Destroy
+      destroyConfirm: 'Are you sure?'
+      linkNew: New Rental
+
+    indexCars:
+      model: Car Model
+      engine: Size of Engine
+      seats: Seats
+      transmission: Transmission
+      ac: A/C
+      priceDay: Price per Day
+      priceWeek: Price per Week
+      linkShow: Show
+      linkEdit: Edit
+      linkDestroy: Destroy
+      destroyConfirm: 'Are you sure?'
+      linkNew: New Car
+
+    showCars:
+      model: 'Car Model:'
+      engine: 'Size of Engine:'
+      seats: 'Seats:'
+      transmission: 'Transmission:'
+      ac: 'A/C:'
+      priceDay: 'Price per Day:'
+      priceWeek: 'Price per Week:'
+      linkEdit: Edit
+      linkBack: Back
+
+    showRentals:
+      user: 'Renter:'
+      car: 'Car:'
+      start: 'Start of Rental:'
+      end: 'End of Rental:'
+      address: 'Address of Rental:'
+      comments: 'Comments:'
+      edit: Edit
+      back: Back

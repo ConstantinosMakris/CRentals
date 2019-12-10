@@ -1,0 +1,30 @@
+<p>
+  <b><%=I18n.t('views.showCars.model')%></b>
+  <%= @car.model %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.engine')%></b>
+  <%= @car.engine %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.seats')%></b>
+  <%= @car.seats %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.transmission')%> </b>
+  <%= @car.transmission %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.ac')%></b>
+  <%= @car.ac %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.priceDay')%></b>
+  <%= @car.priceDay %>
+</p>
+<p>
+  <b><%=I18n.t('views.showCars.priceWeek')%></b>
+  <%= @car.priceWeek %>
+</p>
+<%= link_to I18n.t('views.showCars.linkEdit'), edit_car_path(@car) %> |
+<%= link_to I18n.t('views.showCars.linkBack'), cars_path %>

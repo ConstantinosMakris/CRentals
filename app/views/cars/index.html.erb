@@ -2,18 +2,19 @@
 <table>
   <thead>
     <tr>
-      <th>Model</th>
-      <th>Engine</th>
-      <th>Seats</th>
-      <th>Transmission</th>
-      <th>Ac</th>
-      <th>Priceday</th>
-      <th>Priceweek</th>
+      <th><%=I18n.t('views.indexCars.model')%></th>
+      <th><%=I18n.t('views.indexCars.engine')%></th>
+      <th><%=I18n.t('views.indexCars.seats')%></th>
+      <th><%=I18n.t('views.indexCars.transmission')%></th>
+      <th><%=I18n.t('views.indexCars.ac')%></th>
+      <th><%=I18n.t('views.indexCars.priceDay')%></th>
+      <th><%=I18n.t('views.indexCars.priceWeek')%></th>
       <th></th>
       <th></th>
       <th></th>
     </tr>
   </thead>
+<% if current_user.admin? %>
   <tbody>
     <% @cars.each do |car| %>
       <tr>
@@ -39,17 +40,18 @@
           <%= car.priceWeek %>
         </td>
         <td>
-          <%= link_to 'Show', car %>
+          <%= link_to I18n.t('views.indexCars.linkShow'), car %>
         </td>
         <td>
-          <%= link_to 'Edit', edit_car_path(car) %>
+          <%= link_to I18n.t('views.indexCars.linkEdit'), edit_car_path(car) %>
         </td>
         <td>
-          <%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to I18n.t('views.indexCars.linkDestroy'), car, method: :delete, data: { confirm: I18n.t('views.indexCars.destroyConfirm') } %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 <br/>
-<%= link_to 'New Car', new_car_path %>
+<% end %>
+<%= link_to I18n.t('views.indexCars.linkNew'), new_car_path %>

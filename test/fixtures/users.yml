@@ -4,12 +4,12 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
-  created_at: '2019-11-22 14:00:02.392055'
-  updated_at: '2019-11-22 14:00:02.392055'
+oneUser:
   email: 'conmakris99@gmail.com'
+  encrypted_password: <%= User.new.send(:password_digest, '112233') %>
   username: 'cm01428'
   first_name: 'Constantinos'
   last_name: 'Makris'
   age: 20
   telephone: '0345435654'
+  admin: false

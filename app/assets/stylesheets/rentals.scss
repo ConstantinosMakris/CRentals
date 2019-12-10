@@ -12,7 +12,20 @@
     }
   }
   input {
-    
+    margin-bottom: 10px;
+  }
+}
+.form-inputs {
+  label {
+    float: left;
+    width: 20px;
+    text-align: right;
+    margin: 2px 10px;
+    &.radio{
+      margin-right: 10px;
+    }
+  }
+  input {
     margin-bottom: 10px;
   }
 }

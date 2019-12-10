@@ -1,0 +1,26 @@
+<p>
+  <b><%=I18n.t('views.showRentals.user')%></b>
+  <%= @rental.user.username %>
+</p>
+<p>
+  <b><%=I18n.t('views.showRentals.car')%></b>
+  <%= @rental.car.model %>
+</p>
+<p>
+  <b><%=I18n.t('views.showRentals.start')%></b>
+  <%= @rental.start %>
+</p>
+<p>
+  <b><%=I18n.t('views.showRentals.end')%></b>
+  <%= @rental.end %>
+</p>
+<p>
+  <b><%=I18n.t('views.showRentals.address')%></b>
+  <%= @rental.address %>
+</p>
+<p>
+  <b><%=I18n.t('views.showRentals.comments')%></b>
+  <%= @rental.comments %>
+</p>
+<%= link_to I18n.t('views.showRentals.edit'), edit_rental_path(@rental) %> |
+<%= link_to I18n.t('views.showRentals.back'), rentals_path %>

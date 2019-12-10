@@ -2,19 +2,18 @@
 <table class="dataTable">
   <thead>
     <tr>
-      <th>User</th>
-      <th>Car</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Address</th>
-      <th>Comments</th>
+      <th><%=I18n.t('views.indexRentals.user')%></th>
+      <th><%=I18n.t('views.indexRentals.car')%></th>
+      <th><%=I18n.t('views.indexRentals.start')%></th>
+      <th><%=I18n.t('views.indexRentals.end')%></th>
+      <th><%=I18n.t('views.indexRentals.address')%></th>
+      <th><%=I18n.t('views.indexRentals.comments')%></th>
       <th></th>
       <th></th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-
     <% if user_signed_in? %>
     <% @rentals.each do |rental| %>
       <tr>
@@ -37,18 +36,20 @@
           <%= rental.comments %>
         </td>
         <td>
-          <%= link_to 'Show', rental %>
+          <%= link_to I18n.t('views.indexRentals.linkShow'), rental %>
         </td>
         <td>
-          <%= link_to 'Edit', edit_rental_path(rental) %>
+          <%= link_to I18n.t('views.indexRentals.linkEdit'), edit_rental_path(rental) %>
         </td>
         <td>
-          <%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% if current_user.admin %>
+          <%= link_to I18n.t('views.indexRentals.linkDestroy'), rental, method: :delete, data: { confirm: I18n.t('views.indexRentals.destroyConfirm') } %>
+          <% end %>
         </td>
       </tr>
     <% end %>
-    <%= link_to 'New Rental', new_rental_path %>
   </tbody>
 </table>
 <br/>
 <% end %>
+<%= link_to I18n.t('views.indexRentals.linkNew'), new_rental_path %>

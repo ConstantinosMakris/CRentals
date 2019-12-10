@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :rentals
   resources :cars
-  devise_for :users#, :controllers => {:sign_in => 'users/sign_in' }
+  devise_for :users
 
   resources :users
   root 'home#home'

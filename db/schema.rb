@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_04_230749) do
+ActiveRecord::Schema.define(version: 2019_12_08_234746) do
+
+  create_table "Rentals", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "car_id"
+    t.datetime "start"
+    t.datetime "end"
+    t.string "address"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["car_id"], name: "index_rentals_on_car_id"
+    t.index ["user_id"], name: "index_rentals_on_user_id"
+  end
 
   create_table "cars", force: :cascade do |t|
     t.string "model", null: false
@@ -23,19 +36,6 @@ ActiveRecord::Schema.define(version: 2019_12_04_230749) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["model"], name: "index_Cars_on_model", unique: true
-  end
-
-  create_table "rentals", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "car_id"
-    t.datetime "start"
-    t.datetime "end"
-    t.string "address"
-    t.text "comments"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["car_id"], name: "index_rentals_on_car_id"
-    t.index ["user_id"], name: "index_rentals_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2019_12_04_230749) do
     t.string "last_name"
     t.integer "age", default: 0
     t.string "telephone"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

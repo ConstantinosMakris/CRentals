@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class HomeControllerTest < ActionController::TestCase
-  #include Devise::TestHelpers
+class HomeControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
 
   test "should get home" do
     get root_url

@@ -3,7 +3,7 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
   <div class="form-inputs">
-    <%= f.association :user, selected: current_user , class: 'user'%>
+    <%= f.association :user, selected: current_user.username, input_html: { class: "form-control", id: "chosen-select-speciality"}, disabled: @rental.user_id%>
     <%= 'Select Car : ' %>
     <%= f.association :car, collection: Car.all.map { |car| [car.model, car.id]} , class: 'car'%>
     <%= f.input :start, as: :datetime %>

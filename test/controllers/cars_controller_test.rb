@@ -1,9 +1,12 @@
 require 'test_helper'
 
-class CarsControllerTest < ActionController::TestCase
-  #include Devise::TestHelpers
+class CarsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
 
   setup do
+    get '/users/sign_in'
+    sign_in users(:oneUser)
+    post user_session_url
     @car = cars(:one)
   end
 
@@ -19,7 +22,7 @@ class CarsControllerTest < ActionController::TestCase
 
   test "should create car" do
     assert_difference('Car.count') do
-      post cars_url, params: { car: { ac: @car.ac, engine: @car.engine, model: @car.model + " create", priceDay: @car.priceDay, priceWeek: @car.priceWeek, seats: @car.seats, transmission: @car.transmission } }
+      post cars_url, params: { car: { ac: @car.ac, engine: @car.engine, model: @car.model + " create" , priceDay: @car.priceDay, priceWeek: @car.priceWeek, seats: @car.seats, transmission: @car.transmission } }
     end
 
     assert_redirected_to car_url(Car.last)
