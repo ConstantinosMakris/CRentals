@@ -198,3 +198,20 @@ en:
       comments: 'Comments:'
       edit: Edit
       back: Back
+  mailer:
+    contact:
+      message: "Could you get in touch with me please?"
+      name: 'Name:'
+      email: 'Email:'
+      tel: 'Telephone:'
+      thanks: 'Thanks,'
+
+  controller:
+    rentals:
+      create: 'Rental was successfully created.'
+      update: 'Rental was successfully updated.'
+      destroy: 'Rental was successfully destroyed.'
+    cars:
+      create: 'Car was successfully created.'
+      update: 'Car was successfully updated.'
+      destroy: 'Car was successfully destroyed.'

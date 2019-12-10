@@ -1,0 +1,17 @@
+<% # frozen_string_literal: true %>
+<%= simple_form_for(@car) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <div class="form-inputs" style="padding-right: 10px;">
+    <%= f.input :model %>
+    <%= f.input :engine %>
+    <%= f.input :seats, collection: 1..10 %>
+    <%= f.select :transmission, ['Automatic', 'Manual'] %>
+    <%= f.input :ac, as: :boolean, checked_value: true, unchecked_value: false %>
+    <%= f.input :priceDay %>
+    <%= f.input :priceWeek %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

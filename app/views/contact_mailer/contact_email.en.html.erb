@@ -2,25 +2,25 @@
   <%= "Dear #{t('app_title')}," %>
 </p>
 <p>
-  <%= "Could you get in touch with me please?" %>
+  <%= I18n.t('mailer.contact.message') %>
 </p>
 <dl></dl>
-<dt>Name:</dt>
+<dt><%= I18n.t('mailer.contact.name') %></dt>
 <dd>
   <%= @name %>
 </dd>
-<dt>Email:</dt>
+<dt><%= I18n.t('mailer.contact.email') %></dt>
 <dd>
   <%= @email %>
 </dd>
-<dt>Telephone:</dt>
+<dt><%= I18n.t('mailer.contact.tel') %></dt>
 <dd>
   <%= @telephone %>
 </dd>
 <p>
   <%= @message %>
 </p>
-<p>Thanks,</p>
+<p><%= I18n.t('mailer.contact.thanks') %></p>
 <p>
   <%= @name %>
 </p>

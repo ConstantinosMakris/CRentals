@@ -3,7 +3,7 @@
 <%= label_tag :name, t('.name') %>
 <%= text_field_tag :name, '', title: t('.enter_name'), size: 50, required: true %>
 <%= label_tag :email, t('.email') %>
-<%= email_field_tag :email, '', title: t('.enter_email'), required: true %>
+<%= email_field_tag :email, '', title: t('.enter_email'), required: true, placeholder: 'user@domain.com' %>
 <%= label_tag :telephone, t('.telephone') %>
 <%= telephone_field_tag :telephone, '', title: t('.enter_telephone'), required: true %>
 <%= label_tag :message, t('.message'), required: true %>
