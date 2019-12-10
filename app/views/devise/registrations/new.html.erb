@@ -27,7 +27,7 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "last_name" }%>
-    <%= f.input :age,
+    <%= f.input :age, collection: 18..80 ,
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "age" }%>
