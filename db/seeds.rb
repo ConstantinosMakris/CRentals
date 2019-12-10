@@ -11,7 +11,7 @@ welcome.delete if welcome
 
 users = User.create([email: 'conmakris992@gmail.com'])
 
-welcome = Car.where(model: 'testMoel3412', engine: '1.4', seats:'5', transmission: 'auto', ac: 'yes', priceDay: '30', priceWeek: '150').first
+welcome = Car.where(model: 'testMoel3412', engine: '1.4', seats:'5', transmission: 'auto', ac: true, priceDay: '30', priceWeek: '150').first
 welcome.delete if welcome
 
 cars = Car.create(model: '12')

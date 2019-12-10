@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CarsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
-
+  
   setup do
     get '/users/sign_in'
     sign_in users(:oneUser)
@@ -22,9 +22,8 @@ class CarsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create car" do
     assert_difference('Car.count') do
-      post cars_url, params: { car: { ac: @car.ac, engine: @car.engine, model: @car.model + " create" , priceDay: @car.priceDay, priceWeek: @car.priceWeek, seats: @car.seats, transmission: @car.transmission } }
+      post cars_url, params: { car: { ac: @car.ac, engine: @car.engine, model: @car.model + " create", priceDay: @car.priceDay, priceWeek: @car.priceWeek, seats: @car.seats, transmission: @car.transmission } }
     end
-
     assert_redirected_to car_url(Car.last)
   end
 
