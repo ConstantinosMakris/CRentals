@@ -3,11 +3,15 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
   <div class="form-inputs" style="padding-right: 10px;">
-    <%= f.input :model %>
+    <%= f.input :model, uniqueness: true %>
     <%= f.input :engine %>
     <%= f.input :seats, collection: 1..10 %>
     <%= f.select :transmission, ['Automatic', 'Manual'] %>
-    <%= f.input :ac, as: :boolean, checked_value: true, unchecked_value: false %>
+    <%= f.input :ac,
+                :as => :select,
+                :collection => [['Yes',true], ['No',false]],
+                :include_blank => false,
+                :label => "Air Condition" %>
     <%= f.input :priceDay %>
     <%= f.input :priceWeek %>
   </div>

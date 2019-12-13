@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_08_234746) do
+ActiveRecord::Schema.define(version: 2019_12_13_192149) do
 
   create_table "Rentals", force: :cascade do |t|
     t.integer "user_id"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2019_12_08_234746) do
     t.decimal "engine", null: false
     t.integer "seats", null: false
     t.string "transmission", null: false
-    t.boolean "ac", null: false
+    t.boolean "ac"
     t.decimal "priceDay", null: false
     t.decimal "priceWeek", null: false
     t.datetime "created_at", null: false

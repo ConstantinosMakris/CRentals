@@ -28,7 +28,7 @@ class CarsController < ApplicationController
 
     respond_to do |format|
       if @car.save
-        format.html { redirect_to @car, notice: <%= I18n.t('controller.cars.create') %> }
+        format.html { redirect_to @car, notice: I18n.t('controller.cars.create') }
         format.json { render :show, status: :created, location: @car }
       else
         @car.errors
@@ -43,7 +43,7 @@ class CarsController < ApplicationController
   def update
     respond_to do |format|
       if @car.update(car_params)
-        format.html { redirect_to @car, notice: <%= I18n.t('controller.cars.update') %> }
+        format.html { redirect_to @car, notice: I18n.t('controller.cars.update') }
         format.json { render :show, status: :ok, location: @car }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class CarsController < ApplicationController
   def destroy
     @car.destroy
     respond_to do |format|
-      format.html { redirect_to cars_url, notice: <%= I18n.t('controller.cars.destroy') %> }
+      format.html { redirect_to cars_url, notice: I18n.t('controller.cars.destroy') }
       format.json { head :no_content }
     end
   end

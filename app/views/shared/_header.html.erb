@@ -33,6 +33,9 @@
           <%= '|' %>
           <%= link_to t('sign_up'), new_user_registration_path %>
           <% end %>
+          <% if is_admin? %> |
+          <a href="/cars"><%= I18n.t('home.nav.cars')%></a>
+          <% end %>
         </span>
       </nav>
     </div>

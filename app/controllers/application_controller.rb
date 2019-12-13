@@ -4,8 +4,14 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  helper_method :is_admin?
+
      def configure_permitted_parameters
          devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:email, :password, :password_confirmation, :username, :first_name, :last_name, :age, :telephone) }
          devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:email, :password, :current_password, :username, :first_name, :last_name, :age, :telephone) }
+     end
+
+     def is_admin?
+       signed_in? ? current_user.admin : false
      end
 end
