@@ -29,6 +29,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+#localisation of strings
 en:
   app_title: CRentals
   app_description: Welcome to CRentals company
@@ -91,11 +92,6 @@ en:
     aboutUs:
       title: About Us
       location: Our Location
-
-
-    get_quote:
-      no_email: You must supply an email address
-      email_sent: Thank you. We will be in touch shortly.
 
     carRates:
       models: Car Models
@@ -235,8 +231,6 @@ en:
     cars:
       auto: 'Automatic'
       manual: 'Manual'
-      yes: Yes
-      no: No
       ac: Air Condition
 
   devise:

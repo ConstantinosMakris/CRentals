@@ -1,6 +1,7 @@
+# controller for the cars model
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user! #authenticate the user before any action in the controller
   # GET /cars
   # GET /cars.json
   def index
@@ -23,6 +24,7 @@ class CarsController < ApplicationController
 
   # POST /cars
   # POST /cars.json
+  # action to create a new car
   def create
     @car = Car.new(car_params)
 
@@ -40,6 +42,7 @@ class CarsController < ApplicationController
 
   # PATCH/PUT /cars/1
   # PATCH/PUT /cars/1.json
+  #action  to update an existing car
   def update
     respond_to do |format|
       if @car.update(car_params)
@@ -54,6 +57,7 @@ class CarsController < ApplicationController
 
   # DELETE /cars/1
   # DELETE /cars/1.json
+  # action to delete an existing car
   def destroy
     @car.destroy
     respond_to do |format|

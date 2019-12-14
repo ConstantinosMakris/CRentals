@@ -13,9 +13,6 @@ Rails.application.routes.draw do
 
   get 'book', to: 'home#carRates'
 
-  get 'quote', to: 'home#quote'
-  post 'get_quote', to: 'home#get_quote'
-
   get 'destroy_user_session_path', to: 'home#sign_out'
 
   get 'rentals', to: 'home#rentals'

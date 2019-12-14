@@ -1,15 +1,16 @@
+#controller for the rentals
 class RentalsController < ApplicationController
   before_action :set_rental, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user! #authenticate the user before any action in the controller
 
 
   # GET /rentals
   # GET /rentals.json
   def index
-    if current_user.admin?
-      @rentals = Rental.all
+    if current_user.admin? # checks if the user is an admin
+      @rentals = Rental.all #if the user is an admin it shows all the rentals
     else
-      @rentals = Rental.user_rental(current_user)
+      @rentals = Rental.user_rental(current_user) #otherwise it shows only the user's rentals
     end
   end
 
@@ -20,20 +21,19 @@ class RentalsController < ApplicationController
 
   # GET /rentals/new
   def new
-    @cars = Car.first
     @rental = Rental.new
   end
 
   # GET /rentals/1/edit
   def edit
-
   end
 
   # POST /rentals
   # POST /rentals.json
+  #action that creates a new rental
   def create
-    @rental = Rental.new(rental_params)
-    @rental.user = current_user
+    @rental = Rental.new(rental_params) #creates the new rental
+    @rental.user = current_user #adds the current user to the rentals
 
     respond_to do |format|
       if @rental.save
@@ -48,6 +48,7 @@ class RentalsController < ApplicationController
 
   # PATCH/PUT /rentals/1
   # PATCH/PUT /rentals/1.json
+  #action that updates an existing rental
   def update
     respond_to do |format|
       if @rental.update(rental_params)
@@ -62,6 +63,7 @@ class RentalsController < ApplicationController
 
   # DELETE /rentals/1
   # DELETE /rentals/1.json
+  #action that deletes an existing rental
   def destroy
     @rental.destroy
     respond_to do |format|

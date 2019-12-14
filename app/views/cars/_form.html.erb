@@ -9,7 +9,7 @@
     <%= f.select :transmission, [I18n.t('form.cars.auto'), I18n.t('form.cars.manual')] %>
     <%= f.input :ac,
                 :as => :select,
-                :collection => [[I18n.t('form.cars.yes'),true], [I18n.t('form.cars.no'),false]],
+                :collection => [['Yes',true], ['No',false]],
                 :include_blank => false,
                 :label => I18n.t('form.cars.ac') %>
     <%= f.input :priceDay %>
