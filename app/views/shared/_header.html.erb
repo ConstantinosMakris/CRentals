@@ -7,6 +7,7 @@
           <%= I18n.t('home.home.title')%>
         <ul id="headerList">
           <li><%= I18n.t('home.header.title')%></li>
+          <li><%= I18n.t('home.header.location')%></li>
           <li><%= I18n.t('home.header.telephone')%></li>
         </ul>
       </header>
@@ -25,13 +26,13 @@
           <%= "#{current_user.username} |"  %>
           <a href="/rentals/new"><%= I18n.t('home.nav.rent')%></a> |
           <a href="/rentals"><%= I18n.t('home.nav.rental')%></a> |
-          <%= link_to t('profile'), edit_user_registration_path %>
+          <%= link_to I18n.t('home.nav.update'), edit_user_registration_path %>
           <%= '|' %>
-          <%= link_to t('logout'), destroy_user_session_path, method: 'delete' %>
+          <%= link_to I18n.t('home.nav.logout'), destroy_user_session_path, method: 'delete' %>
           <% else %>
-          <%= link_to t('login'), new_user_session_path %>
+          <%= link_to I18n.t('home.nav.login'), new_user_session_path %>
           <%= '|' %>
-          <%= link_to t('sign_up'), new_user_registration_path %>
+          <%= link_to I18n.t('home.nav.sign_up'), new_user_registration_path %>
           <% end %>
           <% if is_admin? %> |
           <a href="/cars"><%= I18n.t('home.nav.cars')%></a>

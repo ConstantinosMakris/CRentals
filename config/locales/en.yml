@@ -51,7 +51,7 @@ en:
     header:
       title: CRentals Car Hire
       location: Guildford, UK
-      telephone: "+44 7517292860"
+      telephone: "+44 734578912"
 
     nav:
       home: Home
@@ -59,10 +59,14 @@ en:
       contact_us: Contact Us
       about_us: About Us
       rental: Your Rentals
+      profile: Profile
       rent: Rent
-      sign_in: Sign In
-      sign_out: Sign Out
+      login: Log In
+      logout: Log Out
+      sign_up: Sign Up
+      update: Profile
       cars: Edit Cars
+      login: Login
 
     footer:
       footer1: Implemented by Constantinos Makris ©2019
@@ -141,6 +145,13 @@ en:
       ac: "A/C: Yes"
       priceDay: "Price per day: £45"
       priceWeek: "Price per week: £225"
+      list1: Choose Car
+      list2: Sign Up in the website
+      list3: Go to 'Rent' link
+      list4: Enter your details
+      list5: We will deliver the car at your address on the agreed date and time
+      list6: The payment will be made when you are given the car
+      crentals: CRentals
 
     mercedes:
       model: "Model: Mercedes S-Class"
@@ -151,6 +162,10 @@ en:
       priceDay: "Price per day: £100"
       priceWeek: "Price per week: £550"
 
+    modal:
+      btn: 👉 MORE INFORMATION ABOUT RENTAL 👈
+      info: More Information
+      rent: "To Rent:"
   views:
     indexRentals:
       user: User
@@ -216,3 +231,79 @@ en:
       create: 'Car was successfully created.'
       update: 'Car was successfully updated.'
       destroy: 'Car was successfully destroyed.'
+  form:
+    cars:
+      auto: 'Automatic'
+      manual: 'Manual'
+      yes: Yes
+      no: No
+      ac: Air Condition
+
+  devise:
+    confirmations:
+      new:
+        submit: "Resend confirmation instructions"
+    mailer:
+      confirmation:
+        confirm: 'Confirm my account'
+      email_changed:
+        changing: We're contacting you to notify you that your email is being changed to
+        changed: We're contacting you to notify you that your email has been changed to
+      password_change: We're contacting you to notify you that your password has been changed.
+      reset_pass_instructions:
+        request_link: Someone has requested a link to change your password. You can do this through the link below.
+        change: 'Change my password'
+        ignore: If you didn't request this, please ignore this email.
+        access_link: Your password won't change until you access the link above and create a new one.
+      unlock:
+        hello: Hello
+        locked: Your account has been locked due to an excessive number of unsuccessful sign in attempts.
+        link: 'Click the link below to unlock your account:'
+        unlock: 'Unlock my account'
+    passwords:
+      edit:
+        new: "New password"
+        newHtml: "new-password"
+        confirm: "Confirm your new password"
+        confirmHtml: "new-password"
+        change: "Change my password"
+      new:
+        send: "Send me reset password instructions"
+    registrations:
+      edit:
+        edit: Edit
+        blank: "leave it blank if you don't want to change it"
+        new_pass: "new-password"
+        current: "we need your current password to confirm your changes"
+        current_pass: "current-password"
+        username: "username"
+        first_name: "first_name"
+        last_name: last_name
+        age: age
+        telephone: telephone
+        update: Update
+        unhappy: Unhappy?
+        cancel: Cancel my account
+        sure: Are you sure?
+        back: Back
+      new:
+        new: new-password
+        username: username
+        first_name: first_name
+        last_name: last_name
+        age: age
+        telephone: telephone
+        sign_up: Sign Up
+    sessions:
+      new:
+        login: Log In
+
+    shared:
+      links:
+        login: Log In
+        sign_up: Sign Up
+        forgot: Forgot your password?
+        confirm_instructions: "Didn't receive confirmation instructions?"
+        unlock_instructions: "Didn't receive unlock instructions?"
+        sign_in_with: Sign in with
+        message: message

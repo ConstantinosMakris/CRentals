@@ -37,7 +37,7 @@ class RentalsController < ApplicationController
 
     respond_to do |format|
       if @rental.save
-        format.html { redirect_to @rental, notice: I18n.t('controller.rentals.create')  }
+        format.html { redirect_to @rental, notice: I18n.t('controller.rentals.create') }
         format.json { render :show, status: :created, location: @rental }
       else
         format.html { render :new }
@@ -65,7 +65,7 @@ class RentalsController < ApplicationController
   def destroy
     @rental.destroy
     respond_to do |format|
-      format.html { redirect_to rentals_url, notice: I18n.t('controller.rentals.update')  }
+      format.html { redirect_to rentals_url, notice: I18n.t('controller.rentals.destroy')  }
       format.json { head :no_content }
     end
   end

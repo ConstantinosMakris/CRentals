@@ -6,12 +6,12 @@
     <%= f.input :model, uniqueness: true %>
     <%= f.input :engine %>
     <%= f.input :seats, collection: 1..10 %>
-    <%= f.select :transmission, ['Automatic', 'Manual'] %>
+    <%= f.select :transmission, [I18n.t('form.cars.auto'), I18n.t('form.cars.manual')] %>
     <%= f.input :ac,
                 :as => :select,
-                :collection => [['Yes',true], ['No',false]],
+                :collection => [[I18n.t('form.cars.yes'),true], [I18n.t('form.cars.no'),false]],
                 :include_blank => false,
-                :label => "Air Condition" %>
+                :label => I18n.t('form.cars.ac') %>
     <%= f.input :priceDay %>
     <%= f.input :priceWeek %>
   </div>

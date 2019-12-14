@@ -8,19 +8,19 @@
 
   <div class="form-inputs">
     <%= f.input :password,
-                label: "New password",
+                label:  I18n.t('devise.passwords.edit.new'),
                 required: true,
                 autofocus: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: I18n.t('devise.passwords.edit.newHtml') } %>
     <%= f.input :password_confirmation,
-                label: "Confirm your new password",
+                label: I18n.t('devise.passwords.edit.confirm'),
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: I18n.t('devise.passwords.edit.confirmHtml') } %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Change my password" %>
+    <%= f.button :submit, I18n.t('devise.passwords.edit.change') %>
   </div>
 <% end %>
 

@@ -11,34 +11,34 @@
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.new') } %>
     <%= f.input :password_confirmation,
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.new') } %>
     <%= f.input :username,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "username" }%>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.username') }%>
     <%= f.input :first_name,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "first_name" }%>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.first_name') }%>
     <%= f.input :last_name,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "last_name" }%>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.last_name') }%>
     <%= f.input :age, collection: 18..80 ,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "age" }%>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.age') }%>
     <%= f.input :telephone,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "telephone" }%>
+                input_html: { autocomplete: I18n.t('devise.registrations.new.telephone') }%>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, I18n.t('devise.registrations.new.sign_up') %>
   </div>
 <% end %>
 

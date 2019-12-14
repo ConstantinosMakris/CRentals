@@ -14,9 +14,11 @@
   input {
     margin-bottom: 10px;
   }
+  background-color: #D3D3D3;
 }
+
 .form-inputs {
-  label {
+ label {
     float: left;
     width: 20px;
     text-align: right;
@@ -28,4 +30,13 @@
   input {
     margin-bottom: 10px;
   }
+}
+
+.dateTime{
+  width: 20%;
+  display:inline-flex;
+  }
+
+.address{
+  margin-left: 0%;
 }

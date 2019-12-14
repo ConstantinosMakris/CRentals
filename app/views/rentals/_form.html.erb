@@ -6,10 +6,14 @@
     <%= f.association :user, selected: current_user.username, input_html: { class: "form-control", id: "chosen-select-speciality"}, disabled: @rental.user_id%>
     <%= 'Select Car : ' %>
     <%= f.association :car, collection: Car.all.map { |car| [car.model, car.id]} , class: 'car'%>
-    <%= f.input :start, as: :datetime, start_year: Date.today.year, end_year: Date.today.year + 2, order: [:day, :month, :year] %>
-    <%= f.input :end, as: :datetime, start_year: Date.today.year, end_year: Date.today.year + 2, order: [:day, :month, :year]%>
-    <%= f.input :address , class: 'address'%>
-    <%= f.input :comments , class: 'comments'%>
+    <div class="dateTime">
+      <%= f.input :start, as: :datetime, start_year: Date.today.year, end_year: Date.today.year + 2, order: [:day, :month, :year] %>
+      <%= f.input :end, as: :datetime, start_year: Date.today.year, end_year: Date.today.year + 2, order: [:day, :month, :year]%>
+    </div>
+    <div class="address">
+      <%= f.input :address %>
+    </div>
+    <%= f.input :comments %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>

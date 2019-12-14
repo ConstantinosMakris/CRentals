@@ -124,36 +124,36 @@
       </center>
     </table>
 
-  <button id="myBtn">👉 MORE INFORMATION ABOUT RENTAL 👈</button>
+  <button id="Btn"><%= I18n.t('home.modal.btn')%></button>
 
-  <div id="myModal" class="modal">
+  <div id="Modal" class="modal">
 
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        <h2>More Information</h2>
+        <h2><%= I18n.t('home.modal.info')%></h2>
       </div>
       <div class="modal-body">
-        <p>To Rent:</p>
+        <p><%= I18n.t('home.modal.rent')%></p>
         <ol>
-          <li>Choose Car</li>
-          <li>Sign Up in the website</li>
-          <li>Go to 'Rent' link</li>
-          <li>Enter your details</li>
-          <li>We will deliver the car at your address on the agreed date and time</li>
-          <li>The payment will be made when you are given the car</li>
+          <li><%= I18n.t('home.modal.list1')%></li>
+          <li><%= I18n.t('home.modal.list2')%></li>
+          <li><%= I18n.t('home.modal.list3')%></li>
+          <li><%= I18n.t('home.modal.list4')%></li>
+          <li><%= I18n.t('home.modal.list5')%></li>
+          <li><%= I18n.t('home.modal.list6')%></li>
         </ol>
 
       </div>
       <div class="modal-footer">
-        <h3>CRentals</h3>
+        <h3><%= I18n.t('home.modal.crentals')%></h3>
       </div>
     </div>
   </div>
       <script>
-        var modal = document.getElementById("myModal");
+        var modal = document.getElementById("Modal");
 
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("Btn");
 
         var span = document.getElementsByClassName("close")[0];
 

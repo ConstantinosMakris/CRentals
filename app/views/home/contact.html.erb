@@ -5,7 +5,7 @@
 <%= label_tag :email, t('.email') %>
 <%= email_field_tag :email, '', title: t('.enter_email'), required: true, placeholder: 'user@domain.com' %>
 <%= label_tag :telephone, t('.telephone') %>
-<%= telephone_field_tag :telephone, '', title: t('.enter_telephone'), required: true %>
+<%= telephone_field_tag :telephone, '', title: t('.enter_telephone'), required: true, placeholder: 'xxx-xxx-xxxx' %>
 <%= label_tag :message, t('.message'), required: true %>
 <%= text_field_tag :message, '', title: t('.enter_message'), size: 100, required: true %>
 <%= submit_tag t('.submit') %>
